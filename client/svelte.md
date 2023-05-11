@@ -1,6 +1,6 @@
 # Svelte
 
-Svelte menggabungkan script, html, dan css dalam satu file sebagai component, lalu component tersebut digabungkan dengan component lainya untuk membuat web client app. Svelte memiliki syntax sendiri untuk mengintegrasikan data ke html. Svelte juga menyediakan **Store** untuk *State Management*. Svelte bekerja sebagai compiler menjadi vanilla javascript yang dimengerti oleh browser. Keuntunganya adalah performa yang lebih cepat karena svelte tidak membuat virtual dom seperti react setelah fase build.
+Svelte combine javascript, html, and css in one svelte file as component, then it combined with other components to make web client app. Svelte has it own html templating syntax to make it easier for integrating data into the ui. Svelte also provide **Svelte Store** for advanced State Management. Svelte work as compiler to compile svelte file into vanilla javascript that can run by browser. The benefits are more performant, because svelte does not create Virtual DOM like react.
 
 [svelte.dev](https://svelte.dev/)
 
@@ -20,13 +20,13 @@ Basic:
 	const iterable = []
 	const store = writable(0)
 	let formData = {
-		nama: '',
+		name: '',
 		password: ''
 	}
 	
 	let files: FileList
 	
-	function tambah(){ counter += 1 }
+	function add(){ counter += 1 }
 	function setStore(){ store.update(e=>e+1) }
 	function formSubmit() {
 		// no need to `event.preventDefault()` here
@@ -34,7 +34,7 @@ Basic:
 </script>
 
 <div>Counter: {counter}</div>
-<button on:click={tambah}>Tambah</button>
+<button on:click={add}>Add</button>
 
 <div class="grid {props}">Store: {$store}</div>
 <button on:click={setStore}>Store Set</button>
@@ -42,7 +42,7 @@ Basic:
 <Navbar item={iterable} />
 
 <form on:submit|preventDefault={formSubmit}>
-	<input type=text bind:value={formData.nama}>
+	<input type=text bind:value={formData.name}>
 	<input type=password bind:value={formData.password}>
 	<input type=file bind:files={files}>
 	<button>Submit</button>
@@ -50,24 +50,24 @@ Basic:
 
 <input type=checkbox bind:checked={bindBool}>
 {#if bindBool}
-<div>kondisi benar</div>
+<div>condition true</div>
 {:else}
-<div>kondisi salah</div>
+<div>condition false</div>
 {/if}
 
 {#each iterable as elem,i (id)}
-<div>Elemen ke {i} berisi {elem}</div>
+<div>Element {i} contain {elem}</div>
 {:else}
-<p>Iterator kosong</p>
+<p>Iterator empty</p>
 {/each}
 
 {#await fetch('/api')}
 <div>Loading....</div>
 {:then res}
 {@const data = res.text()}
-<div>Hasil: {data}</div>
+<div>Result: {data}</div>
 {:catch err}
-<div>Ada kesalahan: {err}</div>
+<div>Something went wrong: {err}</div>
 {/await}
 
 <style>
@@ -99,9 +99,7 @@ Runtime:
 </script>
 ```
 
-## Lainya
-
-beberapa fitur yang tidak dijelaskan di sini:
+## Not Listed
 
 - svelte/motion
 - svelte/transition
@@ -120,4 +118,4 @@ beberapa fitur yang tidak dijelaskan di sini:
 
 ## SvelteKit
 
-Svelte meng-*compile* file menjadi vanilla js untuk bisa dijalankan oleh browser. Kita juga bisa meng-*compile* secara langsung menggunakan **Svelte API** di server/nodejs untuk mengintegrasikan server render atau routing. Salah satu projek yang menggunakan ini adalah SvelteKit, dibuat oleh pembuat svelte sendiri. SvelteKit menyediakan beberapa fitur backend menggunakan svelte sebagai frontend.
+Svelte compile svelte files to vanilla js that can be run by browser. We can also compile ourself at runtime using **Svelte API** on the server. SvelteKit uses this to add backend functionality and integrate Svelte as the frontend. SvelteKit provide server side rendering, routing, etc, by following convention so we dont have to work with Svelte API directly.

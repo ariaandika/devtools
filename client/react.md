@@ -1,12 +1,12 @@
 # React
 
-React merupakan *Gold Standard Library* untuk membuat web client, artinya telah banyak dikenal dan digunakan para developer. React menggunakan [JSX](#JSX) untuk membuat ui dalam javascript ketimbang html. Hal ini memudahkan untuk memasukan data ke ui. React menggunakan **babel** untuk mengubah JSX menjadi vanilla javascript, karena browser tidak mengerti JSX, melainkan membuat Virtual DOM untuk menjalankan javascript yang di-*build* oleh react. React juga menyediakan [Hooks](#Hooks) untuk mengelola state (*State Management*) dalam component.
+React is a **Gold Standard Library** for building web client app. What that means is, react known and use by developers. React use [JSX](#jsx) for making the ui inside javascript instead of html. This way, its easier to integrate data to the ui, since its already inside javascript. React uses **Babel** to transpile JSX to vanilla javascript, because browser does not know how to interpret JSX. Instead, react create a **Virtual DOM** to run the transpiled code. React also provide [Hooks](#hooks) for **State Management** in a component.
 
 [react.dev](https://react.dev/)
 
 ## JSX
 
-Jsx membawa html ke javascript dengan beberapa tambahan. Jsx dapat mengintegrasikan data dengan mudah dibandingkan dengan html.
+JSX bring html into javascript with some additions. JSX can integrate data easily instead of html.
 
 ```jsx
 function App() {
@@ -14,7 +14,7 @@ function App() {
 	return <div title="container"><h1>{data}</h1></div>
 }
 
-// Setelah di build dengan babel
+// After transpiled by Babel
 function App() {
 	const data = 'React Dev'
 	return React.createElement(
@@ -27,21 +27,21 @@ function App() {
 
 ## Hooks
 
-Hooks adalah function yang dijalankan setiap ui diupdate. Hal ini dapat digunakan salah satunya untuk mempertahankan state dalam component. React menyediakan beberapa built-in hook, dan kita dapat membuat hook kita sendiri. Contoh hook untuk mempertahankan state, `useState`:
+Hooks is a function that run every time ui updated. One use case is to hold a state in a component. React provide a number of built-in hooks, or we can create ourself. Example of built-in hook that manage a state, `useState`:
 
 ```jsx
 function App() {
 	const [counter,setCounter] = useState(0)
 	return (
 		<div>{counter}</div>
-		<button onClick={()=>setCounter(counter + 1)}>Tambah</button>
+		<button onClick={()=>setCounter(counter + 1)}>Add</button>
 	)
 }
 ```
 
 ## Component
 
-React component adalah sebuah fungsi yang menghasilkan jsx yang bisa digunakan berulang kali. Kita dapat memasukan attribute ke component untuk diakses di dalam component sebagai **props**.
+React component is a function that return a JSX. Component can be used multiple time in multiple place. We can add an attribute that can be accessed by the component as function parameter. This is callep **props**.
 
 ```jsx
 function Comp({ count, title }) {
@@ -53,18 +53,19 @@ function App() {
 }
 ```
 
-## Lainya
-
-beberapa fitur yang tidak dijelaskan di sini:
+## Not Listed
 
 - server component
 
 ## Project
 
-Salah satu cara mudah untuk membuat react projek adalah menggunakan vite. Jalankan `npm create vite` di terminal, dan pilih React.
+One of the easy way to setup react project is using vite. Initiate vite project, then choose react as the template:
+```bash
+npm create vite
+```
 
-> Note: beberapa orang menyarankan `npx create-react-app`, projek ini tidak disarankan karena sudah lama tidak di update (Sep 8, 2022), banyak masalah keamanan yang tidak diperbaiki dibandingkan vite.
+> Note: people usually tell to use `npx create-react-app`, this cli is not recommended because it have not been updated since a long time (Sep 8, 2022), a lot of security risk by using this cli.
 
 ## NextJS
 
-React hanya berjalan di client, tidak memiliki akses atau menjalankan script di server. [NextJS](#) adalah backend framework yang menggunakan react sebagai frontend framework. NextJS menangani server side rendering, routing, api, database integration, dsb.
+React only run on the client, a.k.a browser, and does not have the ability to run script on the server. NextJS is a backend framewoek that uses react as the frontend. NextJS handle the server side rendering, routing, api, database integration, etc.

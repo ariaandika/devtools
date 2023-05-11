@@ -1,4 +1,4 @@
-dokumentasi apa yg w pelajari
+Personal documentation of what i learned
 
 # Web
 
