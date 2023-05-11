@@ -1,4 +1,4 @@
-dokumentasi tentang apa yang saya pelajari
+dokumentasi apa yg w pelajari
 
 # Web
 
@@ -132,15 +132,42 @@ Object Relational Mapper
 - Kotlin
 - Dart
 
-# Design Pattern
+# [Design Pattern](./design/design-pattern.md)
 
-- 
+Builder Pattern
+
+- Factory
+- Builder
+- Singleton
+- Prototype
+
+Behavioral Pattern
+
+- Observer
+- Iterator
+- Strategy
 
 # Data
+
+## Data structure
+
+- list
+- array
+- stacks
+- queue
+- heap
+- tree
+  - b tree
+  - b+ tree
+- hash table
+- suffix tree
+- graph
+- R tree
 
 ## Machine learning technique
 
 - deep learning
+- reinforcement learning
 
 ## Machine learning model
 
