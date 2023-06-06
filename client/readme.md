@@ -12,23 +12,17 @@ A couple library to make web client application in javascript:
 
 - [React](./react.md)
 
-	React is a **Gold Standard Library** for building web client app. What that means is, react known and use by developers. React use [JSX](./react.md#jsx) for making the ui inside javascript instead of html. This way, its easier to integrate data to the ui, since its already inside javascript. React uses **Babel** to transpile JSX to vanilla javascript, because browser does not know how to interpret JSX. Instead, react create a **Virtual DOM** to run the transpiled code. React also provide [Hooks](./react.md#hooks) for **State Management** in a component.
-	
-	React does not implement all feature, instead rely on open source community to make it as library:
-	
-	- React Router
-	- Mantine
-	- Material UI
-	- Chakra UI
-	- Redux
-	
+  React is a **Gold Standard Library** for building web client app. What that means is, react known and use by developers. React use [JSX](./react.md#jsx) to define the ui inside javascript instead of html, make it easier to integrate data to the ui. React uses **Babel** to transpile JSX to vanilla javascript, because browser does not know how to interpret JSX, then it run in react's **Virtual DOM**. React also provide **Hooks** for **State Management** in a component.
+
+ React does not provide complete web development feature, instead rely on open source community:
+
+- React Router, client side routing for react spa
+- Mantine
+- React-Redux, react's state management
+
 - [Svelte](./svelte.md)
-	
-	Svelte combine javascript, html, and css in one svelte file as component, then it combined with other components to make web client app. Svelte has it own html templating syntax to make it easier for integrating data into the ui. Svelte also provide **Svelte Store** for advanced State Management. Svelte work as compiler to compile svelte file into vanilla javascript that can run by browser. The benefits are more performant, because svelte does not create Virtual DOM like react.
-	
-- JQuery
-	
-	JQuery is a library for interacting with web api like DOM or Ajax. JQuery make it very easy to integrate it in a project, by linking the jquery file in html through cdn. JQuery is less used now because most of it feature already implemented in the browser as built-in method. One of it is `querySelector` and `fetch` api.
+
+ Svelte combine javascript, html, and css in one `.svelte` file as component, then it combined with other components to make web client app. Svelte has it own html templating syntax to make it easier for integrating data into the ui. Svelte also provide **Svelte Store** for Reactivity. Svelte work as compiler to compile svelte file into vanilla javascript that can run in the browser. The benefits are more performant, because svelte does not create Virtual DOM like react.
 
 ## CSS
 

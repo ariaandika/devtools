@@ -1,64 +1,110 @@
+# Dev Tour
+
 Personal documentation of what i learned
 
-# Web
+some of it has a link to more detailed explanation, while other i havent been deep dive into it
 
-## [Client](./client/readme.md)
+content
 
-[Javascript](./client/readme.md#javascript)
+- [Programming Language](#programming-language)
+- [Server](#server)
+- [Database](#database)
 
-- [React](./client/react.md)
-	- React Router
-	- Mantine
-	- Material UI
-	- Chakra UI
-	- Redux
-- [Svelte](./client/svelte.md)
-- JQuery
+## Programming Language
 
-[CSS](./client/readme.md#css)
+- Rust
+  - used to make performance critical app
+  - memory safe by using borrow checker instead of garbage collection
+  - really good at error handling
+  - rich type system
+- C#
+  - full object oriented language features
+  - well established framework for building app in many platform
+  - used for building game with Unity
+- Go
+  - lot of built in tools for web development
+  - high performance
+  - simplicity
+- Bash
+  - an interpreted language for interacting with operating system
+- Javascript
+  - easy to learn
+  - used for client side app / browser
+  - popular choice for server side app
+- Typescript
+  - add type system on top of javascript
+- Python
+  - easy to learn
+  - have a lot of library involving in data science
+  - popular choice for machine learning
+- Lua
+  - high performance for interpreted language
+  - well suit for embedded language
+- PHP
+  - language for building server side app
+  - lot of built in feature for server side app
+- C
+  - a high performance low level language
+  - manual memory management
+- Nim
+  - interested
+- zig
+  - interested
+- mojo
+  - interested
+- wasm
+  - high performance
+  - suits for embeded language
+  - its build from other language, so no need to learn new language
+- cmd
+  - interpreted language for interacting with windows os
+- Kotlin
+  - language for building mobile app as alternative to java
+- Dart
+  - language for building cross platform app with flutter framework
+- C++
+  - superset of c with object oriented language
 
-- Tailwindcss
-- Bootstrap
-- Sass
-- Postcss
-
-HTML
-
-- ejs
-- pug
-- blade
-- php
-
-## Fullstack
-
-- NextJS
-- SvelteKit
-- Laravel
-- Qwik
-- Astro
-- HUGO
-
-## Web Api
-
-- JSON Web Token
-- Cookie Session
-- Cors
-- Web Worker
-
-# Server
+## Server
 
 ## Web Server
 
-- NodeJS
-	- ExpressJS
+- Go  
+  lot of built in features for making high performance server app
+  
+- NodeJS  
+  is a popular javascript runtime with so many framework to choose from
+
+- Rust
+  rust have a low level module for interacting with os Tcp/ip  
+  there is a wide range of framework to choose from that achive high performance server app
+  
+- Deno  
+  a alternative for nodejs with a lot of feature built in where nodejs need to install extra tools
+
 - Bun
-- Deno
-- Rust TCP Module
-	-	Actix
-- Go Server
 - Web Server
-	- nginx
-	- Apache
+  - nginx
+  - Apache
+
+## Protocol
+
+- HTTP
+  - RestApi
+  - GraphQL
+- Websocket
+- RPC
+  - tRPC
+  - gRPC
+- RTC
+- FTP
+- Language Server Protocol
+- RabbitMQ
+
+## Api Service
+
+- OAuth
+- Stripe
 
 ## Database
 
@@ -70,7 +116,7 @@ Model
 - Wide Column
 - Graph
 
-Management System
+Database Management System
 
 - MySQL
 - Postgress
@@ -92,47 +138,63 @@ Object Relational Mapper
 - Diesel
 - Eloquent
 
-## Protocol
+## Web
 
-- HTTP
-	- RestApi
-	- GraphQL
-- Websocket
-- RPC
-	- tRPC
-	- gRPC
-- RTC
-- FTP
-- Language Server Protocol
-- RabbitMQ
+## [Client](./client/readme.md)
 
-## Api Service
+[Javascript](./client/readme.md#javascript)
 
-- OAuth
-- Stripe
+- [React](./client/react.md), javascript frontend library
+- [Svelte](./client/svelte.md), javascript frontend library
 
-# Language
+[CSS](./client/readme.md#css)
 
-- Rust
-- C#
-- Go
-- Javascript
-- Typescript
-- C
-- C++
-- Lua
-- Python
-- PHP
-- Nim
-- zig
-- Haskell
-- wasm
-- Bash
-- cmd
-- Kotlin
-- Dart
+- Tailwindcss, building block css library
+- Bootstrap, ready to use css component library
+- Sass, css with programmatic feature
+- Postcss, auto add css boring boilerplate
 
-# [Design Pattern](./design/design-pattern.md)
+HTML
+
+- ejs, html template using embedded js
+- blade, different take on php
+- php, the og hypertext preprocessor
+
+## Fullstack
+
+- NextJS, full featured metaframework that uses react as frontend
+- SvelteKit, svelte's official backend framework that can be deployed anywhere
+- Laravel, php framework for web artisans
+- Qwik
+- Astro
+- HUGO
+
+## Web Api
+
+- JSON Web Token
+- Cookie Session
+- Cors
+- Web Worker
+
+## Linux
+
+## Distro
+
+- Arch
+- Debian
+- Fedora
+- openSuse
+- Gentoo
+
+## Commands
+
+- to many to list
+
+## Display Server
+
+## Window Manager
+
+## [Design Pattern](./design/design-pattern.md)
 
 Builder Pattern
 
@@ -147,7 +209,7 @@ Behavioral Pattern
 - Iterator
 - Strategy
 
-# Data
+## Data
 
 ## Data structure
 
@@ -177,23 +239,13 @@ Behavioral Pattern
 - recurrent neural network
 
 ## libraries
-	- Tensorflow
-	- PyTorch
-	- NumPy
-	- Pandas
-- neural network
 
-## Algorithm
+- Tensorflow
+- PyTorch
+- NumPy
+- Pandas
 
-- sorting algorithm
-	- quicksort
-- search algorithm
-	- linear
-	- binary
-- decision algorithm
-	- alpha beta pruning
-
-# Dev tools
+## Dev tools
 
 ## Version Control
 
@@ -225,27 +277,31 @@ Behavioral Pattern
 - vitest
 - jest
 
-# Machine Learning
+## Machine Learning
 
 - libraries
-	- Tensorflow
-	- PyTorch
-	- NumPy
-	- Pandas
+  - Tensorflow
+  - PyTorch
+  - NumPy
+  - Pandas
 - neural network
 
-# Algorithm
+## Algorithm
 
-- sorting
-- binary search
-- alpha beta pruning
+- sorting algorithm
+  - quicksort
+- search algorithm
+  - linear
+  - binary
+- decision algorithm
+  - alpha beta pruning
 
-# Graphical User Interface
+## Graphical User Interface
 
 ## Desktop
 
 - Rust
-	- egui
+  - egui
 - Tauri
 - Electron
 
@@ -255,7 +311,7 @@ Behavioral Pattern
 - Flutter
 - React Native
 
-# Game
+## Game
 
 ## Game Engine
 
@@ -266,14 +322,14 @@ Behavioral Pattern
 
 ## Game Theory
 
-- 
+- path finding
 
-# Monorepo
+## Monorepo
 
 - Turborepo
 - Nx
 
-# Other
+## Other
 
 - cryptography
 - logic gate

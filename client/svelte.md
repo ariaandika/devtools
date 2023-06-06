@@ -4,33 +4,33 @@ Svelte combine javascript, html, and css in one svelte file as component, then i
 
 [svelte.dev](https://svelte.dev/)
 
-# Cheatsheet
+## Cheatsheet
 
 Basic:
 
 ```svelte
 <script lang=ts>
-	import { writable } from 'svelte/store'
-	import Navbar from 'Navbar.svelte'
+  import { writable } from 'svelte/store'
+  import Navbar from 'Navbar.svelte'
 
-	export let props = 'bg-red-100'
-	let counter = 0
-	$: double = counter * 2
-	let bindBool = false
-	const iterable = []
-	const store = writable(0)
-	let formData = {
-		name: '',
-		password: ''
-	}
-	
-	let files: FileList
-	
-	function add(){ counter += 1 }
-	function setStore(){ store.update(e=>e+1) }
-	function formSubmit() {
-		// no need to `event.preventDefault()` here
-	}
+  export let props = 'bg-red-100'
+  let counter = 0
+  $: double = counter * 2
+  let bindBool = false
+  const iterable = []
+  const store = writable(0)
+  let formData = {
+    name: '',
+    password: ''
+  }
+
+  let files: FileList
+  
+  function add(){ counter += 1 }
+  function setStore(){ store.update(e=>e+1) }
+  function formSubmit() {
+    // no need to `event.preventDefault()` here
+  }
 </script>
 
 <div>Counter: {counter}</div>
@@ -42,10 +42,10 @@ Basic:
 <Navbar item={iterable} />
 
 <form on:submit|preventDefault={formSubmit}>
-	<input type=text bind:value={formData.name}>
-	<input type=password bind:value={formData.password}>
-	<input type=file bind:files={files}>
-	<button>Submit</button>
+  <input type=text bind:value={formData.name}>
+  <input type=password bind:value={formData.password}>
+  <input type=file bind:files={files}>
+  <button>Submit</button>
 </form>
 
 <input type=checkbox bind:checked={bindBool}>
@@ -71,9 +71,9 @@ Basic:
 {/await}
 
 <style>
-	div {
-		background-color: red;
-	}
+  div {
+    background-color: red;
+  }
 </style>
 ```
 
@@ -81,21 +81,21 @@ Runtime:
 
 ```svelte
 <script lang=ts>
-	onMount(()=>{
-		console.log('Component mounted')
-	})
-	onDestroy()
-	beforeUpdate()
-	afterUpdate()
-	
-	await tick()
-	
-	setContext('key', 2)
-	getContext('key')
-	hasContext('key')
-	getAllContexts()
-	
-	const dispatch = createEventDispatcher();
+  onMount(()=>{
+   console.log('Component mounted')
+  })
+  onDestroy()
+  beforeUpdate()
+  afterUpdate()
+  
+  await tick()
+  
+  setContext('key', 2)
+  getContext('key')
+  hasContext('key')
+  getAllContexts()
+  
+  const dispatch = createEventDispatcher();
 </script>
 ```
 
@@ -103,12 +103,12 @@ Runtime:
 
 - svelte/motion
 - svelte/transition
-	- use:action
-	- transition:fn
-	- on:introstart
-	- in:fn
+  - use:action
+  - transition:fn
+  - on:introstart
+  - in:fn
 - svelte/animate
-	- animate:name
+  - animate:name
 - a lot of special attributes
 - `<slot>`
 - list of `<svelte:special>`

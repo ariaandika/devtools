@@ -1,5 +1,7 @@
 # System Design
 
+⚠️ Under Construction ⚠️
+
 ## Vertical Scaling
 
 adding more resources to server, like ram or cpu. This approach is easy but expensive.
