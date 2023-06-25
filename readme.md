@@ -4,70 +4,98 @@ Personal documentation of what i learned
 
 some of it has a link to more detailed explanation, while other i havent been deep dive into it
 
-content
+content:
 
 - [Programming Language](#programming-language)
 - [Server](#server)
 - [Database](#database)
+- [Web](#web)
+- [Full Stack](#fullstack)
+- [Linux](#linux)
+- [Web Api](#web-api)
+- [Design Pattern](#design-pattern)
+- [Data](#data)
+- [Dev Tools](#dev-tools)
+- [Graphical User Interface](#graphical-user-interface)
+- [Game](#game)
+- [Monorepo](#monorepo)
+- [Other](#other)
 
 ## Programming Language
 
-- Rust
-  - used to make performance critical app
-  - memory safe by using borrow checker instead of garbage collection
-  - really good at error handling
-  - rich type system
-- C#
-  - full object oriented language features
-  - well established framework for building app in many platform
-  - used for building game with Unity
-- Go
-  - lot of built in tools for web development
-  - high performance
-  - simplicity
-- Bash
-  - an interpreted language for interacting with operating system
-- Javascript
-  - easy to learn
-  - used for client side app / browser
-  - popular choice for server side app
-- Typescript
-  - add type system on top of javascript
-- Python
-  - easy to learn
-  - have a lot of library involving in data science
-  - popular choice for machine learning
-- Lua
-  - high performance for interpreted language
-  - well suit for embedded language
-- PHP
-  - language for building server side app
-  - lot of built in feature for server side app
-- C
-  - a high performance low level language
-  - manual memory management
-- Nim
-  - interested
-- zig
-  - interested
-- mojo
-  - interested
-- wasm
-  - high performance
-  - suits for embeded language
-  - its build from other language, so no need to learn new language
-- cmd
-  - interpreted language for interacting with windows os
-- Kotlin
-  - language for building mobile app as alternative to java
-- Dart
-  - language for building cross platform app with flutter framework
-- C++
-  - superset of c with object oriented language
+- Rust  
+  used to make performance critical app  
+  memory safe by using borrow checker instead of garbage collection  
+  really good at error handling  
+  rich type system
+
+- C#  
+  full object oriented language features  
+  well established framework for building app in many platform  
+  used for building game with Unity  
+
+- Go  
+  lot of built in tools for web development  
+  high performance  
+  simplicity  
+
+- [Bash](./linux/bash.md)  
+  an interpreted language for interacting with operating system  
+
+- Javascript  
+  easy to learn  
+  used for client side app / browser  
+  popular choice for server side app  
+
+- Typescript  
+  add type system on top of javascript  
+
+- Python  
+  easy to learn  
+  have a lot of library involving in data science  
+  popular choice for machine learning  
+
+- Lua  
+  high performance for interpreted language  
+  well suit for embedded language  
+
+- PHP  
+  language for building server side app  
+  lot of built in feature for server side app  
+
+- C  
+  a high performance low level language  
+  manual memory management  
+
+- Nim  
+  interested  
+
+- zig  
+  interested  
+
+- mojo  
+  interested  
+
+- wasm  
+  high performance  
+  suits for embeded language  
+  its build from other language, so no need to learn new language  
+
+- cmd  
+  interpreted language for interacting with windows os  
+
+- Kotlin  
+  language for building mobile app as alternative to java  
+
+- Dart  
+  language for building cross platform app with flutter framework  
+
+- C++  
+  superset of c with object oriented language  
 
 ## Server
 
-## Web Server
+Web Server App
 
 - Go  
   lot of built in features for making high performance server app
@@ -87,7 +115,7 @@ content
   - nginx
   - Apache
 
-## Protocol
+Protocol
 
 - HTTP
   - RestApi
@@ -101,7 +129,7 @@ content
 - Language Server Protocol
 - RabbitMQ
 
-## Api Service
+Api Service
 
 - OAuth
 - Stripe
@@ -137,10 +165,11 @@ Object Relational Mapper
 
 - Diesel
 - Eloquent
+- Gorm
 
 ## Web
 
-## [Client](./client/readme.md)
+[Web](./client/readme.md) is the easiest platform to get started with app development.
 
 [Javascript](./client/readme.md#javascript)
 
@@ -169,16 +198,9 @@ HTML
 - Astro
 - HUGO
 
-## Web Api
-
-- JSON Web Token
-- Cookie Session
-- Cors
-- Web Worker
-
 ## Linux
 
-## Distro
+Distro
 
 - Arch
 - Debian
@@ -186,15 +208,28 @@ HTML
 - openSuse
 - Gentoo
 
-## Commands
+Commands
 
 - to many to list
 
-## Display Server
+Shell
 
-## Window Manager
+- [bash](./linux/bash.md)
 
-## [Design Pattern](./design/design-pattern.md)
+Display Server
+
+Window Manager
+
+## Web Api
+
+- JSON Web Token
+- Cookie Session
+- Cors
+- Web Worker
+
+## Design Pattern
+
+[Design Pattern](./design/design-pattern.md) is a pattern that we can follow to achieve consistency and predictable code.
 
 Builder Pattern
 
@@ -211,7 +246,7 @@ Behavioral Pattern
 
 ## Data
 
-## Data structure
+Data structure
 
 - list
 - array
@@ -226,42 +261,25 @@ Behavioral Pattern
 - graph
 - R tree
 
-## Machine learning technique
-
-- deep learning
-- reinforcement learning
-
-## Machine learning model
-
-- neural network
-- deep neural network
-- convolutional neural network
-- recurrent neural network
-
-## libraries
-
-- Tensorflow
-- PyTorch
-- NumPy
-- Pandas
-
 ## Dev tools
 
-## Version Control
+Version Control
 
 - git
 - github
 
-## Editor
+Editor
 
 - vscode
 - neovim
+- rider
 
-## Deployment
+Deployment
 
 - Docker
+- Kubernetes
 
-## Build Tools
+Web Build Tools
 
 - Vite
 - Webpack
@@ -269,7 +287,7 @@ Behavioral Pattern
 - esbuild
 - Turbopack
 
-## Testing
+Testing
 
 - postman
 - insomnia
@@ -277,16 +295,27 @@ Behavioral Pattern
 - vitest
 - jest
 
-## Machine Learning
+Machine Learning
 
 - libraries
   - Tensorflow
   - PyTorch
   - NumPy
   - Pandas
-- neural network
 
-## Algorithm
+Machine learning technique
+
+- deep learning
+- reinforcement learning
+
+Machine learning model
+
+- neural network
+- deep neural network
+- convolutional neural network
+- recurrent neural network
+
+Algorithm
 
 - sorting algorithm
   - quicksort
@@ -298,14 +327,14 @@ Behavioral Pattern
 
 ## Graphical User Interface
 
-## Desktop
+Desktop
 
 - Rust
   - egui
 - Tauri
 - Electron
 
-## Mobile App
+Mobile App
 
 - Android Studio
 - Flutter
@@ -313,14 +342,14 @@ Behavioral Pattern
 
 ## Game
 
-## Game Engine
+Game Engine
 
 - Unity
 - Game Maker Studio
 - Godot
 - Unreal Engine
 
-## Game Theory
+Game Theory
 
 - path finding
 
