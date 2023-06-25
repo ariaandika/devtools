@@ -76,6 +76,9 @@ content:
 - mojo  
   interested  
 
+- sql  
+  a query language for relational database
+
 - wasm  
   high performance  
   suits for embeded language  
@@ -229,7 +232,7 @@ Window Manager
 
 ## Design Pattern
 
-[Design Pattern](./design/design-pattern.md) is a pattern that we can follow to achieve consistency and predictable code.
+[Software Design Pattern](./design/design-pattern.md) is a pattern that we can follow to achieve consistency and predictable code.
 
 Builder Pattern
 
