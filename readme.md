@@ -114,9 +114,10 @@ Web Server App
   a alternative for nodejs with a lot of feature built in where nodejs need to install extra tools
 
 - Bun
-- Web Server
-  - nginx
-  - Apache
+
+- nginx
+
+- Apache
 
 Protocol
 
@@ -218,6 +219,11 @@ Commands
 Shell
 
 - [bash](./linux/bash.md)
+
+Programs
+
+- tmux
+- [fzf](./linux/fzf.md)
 
 Display Server
 
