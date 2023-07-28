@@ -29,17 +29,22 @@ git log
 remote
 
 ```bash
+git remote add origin https://github.com/ariaandika/logistic.git
+
 git pull
 git fetch
 ```
 
 traveling
 
+need to be in a clean working directory
+
 ```bash
 # goto previous commit
 git checkout <commit_id>
+
 # goto other branch
-git checkout <branch_name>
+git checkout feature
 ```
 
 branching
@@ -47,8 +52,24 @@ branching
 ```bash
 # list branch
 git branch
+
 # new branch
-git branch new_branch
+git branch feature
+
 # merge
-git merge <branch_name>
+git merge feature
+```
+
+stash
+
+```bash
+git stash
+
+git stash pop
+```
+
+squash
+
+```bash
+git merge feature --squash
 ```

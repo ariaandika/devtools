@@ -138,6 +138,45 @@ Api Service
 - OAuth
 - Stripe
 
+## Linux
+
+Distro
+
+- Arch
+- Debian
+- Fedora
+- openSuse
+- Gentoo
+
+Commands
+
+- to many to list
+
+Shell
+
+- [bash](./linux/bash.md)
+
+Programs
+
+- tmux
+- [fzf](./linux/fzf.md)
+
+Display Server
+
+Window Manager
+
+## Dev Ops
+
+Version Control
+
+- git
+- github
+
+Deployment
+
+- Docker
+- Kubernetes
+
 ## Database
 
 Model
@@ -202,33 +241,6 @@ HTML
 - Astro
 - HUGO
 
-## Linux
-
-Distro
-
-- Arch
-- Debian
-- Fedora
-- openSuse
-- Gentoo
-
-Commands
-
-- to many to list
-
-Shell
-
-- [bash](./linux/bash.md)
-
-Programs
-
-- tmux
-- [fzf](./linux/fzf.md)
-
-Display Server
-
-Window Manager
-
 ## Web Api
 
 - JSON Web Token
@@ -272,21 +284,11 @@ Data structure
 
 ## Dev tools
 
-Version Control
-
-- git
-- github
-
 Editor
 
 - vscode
 - neovim
 - rider
-
-Deployment
-
-- Docker
-- Kubernetes
 
 Web Build Tools
 
