@@ -22,11 +22,14 @@
 - echo
 - grep
 - awk
+- sed
 - sort
 - less
 - head, tail
 - cmp, compare file
 - diff, what different
+- uniq
+- tr, replace x with y
 
 ## System
 
@@ -44,7 +47,7 @@
 - su, switch user
 - chmod
 - chown
-- ps
+- ps, ps -ef
 - top, htop
 - kill, pkill
 - reboot
