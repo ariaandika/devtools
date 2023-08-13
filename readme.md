@@ -31,7 +31,7 @@ content:
 
 - C#  
   full object oriented language features  
-  well established framework for building app in many platform  
+  well established framework for building cross platform app  
   used for building game with Unity  
 
 - Go  
@@ -40,12 +40,12 @@ content:
   simplicity  
 
 - [Bash](./linux/bash.md)  
-  an interpreted language for interacting with operating system  
+  a scripting language for interacting with operating system  
 
 - Javascript  
   easy to learn  
   used for client side app / browser  
-  popular choice for server side app  
+  popular choice for server side app with node js
 
 - Typescript  
   add type system on top of javascript  
@@ -81,7 +81,7 @@ content:
 
 - wasm  
   high performance  
-  suits for embeded language  
+  suits for embeded system  
   its build from other language, so no need to learn new language  
 
 - cmd  
@@ -95,6 +95,9 @@ content:
 
 - C++  
   superset of c with object oriented language  
+
+- ocaml
+- carbon
 
 ## Server
 
@@ -137,6 +140,10 @@ Api Service
 
 - OAuth
 - Stripe
+
+[Domain name resolver](./server/dns.md)
+
+[Email Server](./server/mail.md)
 
 ## Linux
 
