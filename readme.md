@@ -1,4 +1,4 @@
-# Dev Documentation
+# Dev Tools
 
 Personal documentation of what i learned
 
@@ -27,7 +27,6 @@ content:
   used to make performance critical app  
   memory safe by using borrow checker instead of garbage collection  
   really good at error handling  
-  rich type system
 
 - C#  
   full object oriented language features  
@@ -45,7 +44,7 @@ content:
 - Javascript  
   easy to learn  
   used for client side app / browser  
-  popular choice for server side app with node js
+  popular choice for server side app
 
 - Typescript  
   add type system on top of javascript  
@@ -67,17 +66,8 @@ content:
   a high performance low level language  
   manual memory management  
 
-- Nim  
-  interested  
-
-- zig  
-  interested  
-
-- mojo  
-  interested  
-
 - sql  
-  a query language for relational database
+  a query language for relational database  
 
 - wasm  
   high performance  
@@ -96,12 +86,27 @@ content:
 - C++  
   superset of c with object oriented language  
 
-- ocaml
-- carbon
+- ruby  
+  object oriented, dynamic type language  
+  popular choice for server side application with ruby on rails framework
+
+interested but havent deep dive yet:
+
+- zig, nim, mojo
+
+other
+
+- elixir, perl, ocaml, carbon
 
 ## Server
 
 Web Server App
+
+- Bun  
+  high performance  
+  built in convinient api  
+  can run typescript  
+  all in one tools (package manager, testing, bundler)  
 
 - Go  
   lot of built in features for making high performance server app
@@ -116,23 +121,24 @@ Web Server App
 - Deno  
   a alternative for nodejs with a lot of feature built in where nodejs need to install extra tools
 
-- Bun
+- nginx  
+  ready to use web server  
+  can be used for reverse proxy
 
-- nginx
-
-- Apache
+- Apache  
+  same purpose with nginx  
 
 Protocol
 
-- HTTP
+- Hypertext Transfer Protocol
   - RestApi
   - GraphQL
 - Websocket
-- RPC
+- Remote Procedural Call
   - tRPC
   - gRPC
 - RTC
-- FTP
+- File Transfer Protocol
 - Language Server Protocol
 - RabbitMQ
 
@@ -162,15 +168,22 @@ Commands
 Shell
 
 - [bash](./linux/bash.md)
+- zsh
+- fish
 
 Programs
 
 - tmux
 - [fzf](./linux/fzf.md)
+- neovim
 
 Display Server
 
+- xorg
+
 Window Manager
+
+- i3
 
 ## Dev Ops
 
@@ -183,6 +196,7 @@ Deployment
 
 - Docker
 - Kubernetes
+- Terraform
 
 ## Database
 
@@ -197,7 +211,7 @@ Model
 Database Management System
 
 - MySQL
-- Postgress
+- Postgres
 - Redis
 - SQLite
 - SurealDB
@@ -213,9 +227,12 @@ Service
 
 Object Relational Mapper
 
+- Drizzle
+- Prisma
 - Diesel
 - Eloquent
 - Gorm
+- Entity Core
 
 ## Web
 
@@ -381,3 +398,4 @@ Game Theory
 - cryptography
 - logic gate
 - shader
+
