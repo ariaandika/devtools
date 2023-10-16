@@ -35,9 +35,7 @@ git pull
 git fetch
 ```
 
-traveling
-
-need to be in a clean working directory
+traveling, need to be in a clean working directory
 
 ```bash
 # goto previous commit
@@ -73,3 +71,46 @@ squash
 ```bash
 git merge feature --squash
 ```
+
+## Commit
+
+amend
+
+```bash
+# commit by changing latest commit history without creating new commit
+# no edit is about the commit message
+git commit --amend --no-edit
+```
+
+can also edit last commit message only
+
+## Branching
+
+checkout to previous commit, then create new branch from there
+
+```bash
+git checkout <commit-hash>
+
+git switch -c <new-branch>
+```
+
+then you can merge back to the original branch
+
+```bash
+# after new commits
+git checkout <original-branch>
+
+git merge <new-branch>
+```
+
+checkout to
+
+## What happen if
+
+- edit staged file
+
+editing staged file will mark both as staged and modified
+
+- rebase fixup within same file
+
+have potential conflict, better use it to fixup multi file edit to one commit

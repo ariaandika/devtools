@@ -4,17 +4,18 @@
 
 - base base-devel linux linux-headers linux-firmware
 - xorg xorg-xinit i3-wm i3blocks i3lock xdotool
-- iwd dhcpcd ntfs-3g grub efibootmgr dosfstools mtools os-prober
-- amd-ucode xf86-video-amdgpu
-- sudo pulseaudio git dmenu fzf zsh htop feh imagemagick 
+- dhcpcd dosfstools efibootmgr iwd ntfs-3g grub mtools os-prober ntp libmtp alsa-utils pulseaudio pulseaudio-alsa
+- amd-ucode xf86-video-amdgpu xf86-video-vesa
+- dmenu sudo git fzf zsh htop feh
   tmux unzip zip vim nvim ripgrep xcompmgr
-- arandr
-- nodejs github-cli npm vlc opera alacritty mariadb obs-studio qutebrowser
+- arandr gthumb
+- alacritty nodejs github-cli npm vlc opera mariadb obs-studio qutebrowser
+  imagemagick composer
 - adobe-source-han-sans-js-fonts
 
 manual
 
-- vscode
+- vscode, obsidian, jmtpfs
 
 ## System
 
@@ -23,6 +24,7 @@ manual
 - /etc/hostname
 - /etc/hosts
 - /etc/default/grub
+- /etc/pulse/default.pa
 
 can change background ?
 
@@ -55,3 +57,4 @@ can change background ?
 - brightness, `/sys/class/backlight/amdgpu_bl0/brightness`
 - create temporary file, `/tmp`
 - shortcut a key to shell, in alacritty keymap, at the bottom of config file
+- mount android, `jmtpfs ~/mnt`

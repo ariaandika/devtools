@@ -1,4 +1,4 @@
-# Dev Tour
+# Dev Documentation
 
 Personal documentation of what i learned
 
